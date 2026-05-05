@@ -1,0 +1,36 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+# Build outputs
+target/
+out/
+build/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+# Local secrets / runtime config
+.env
+.env.*
+!.env.example
+application-local.properties
+*.local.properties
+
+# Keys / certificates
+*.key
+*.pem
+*.p12
+*.jks
+
+# OS
+.DS_Store
+Thumbs.db
