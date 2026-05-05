@@ -5,9 +5,10 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<h1><%= "My MCP Server Sample" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="mcp">McpServlet</a>
+<br/>
 </body>
 </html>
