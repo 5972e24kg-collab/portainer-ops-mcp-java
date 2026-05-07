@@ -19,7 +19,7 @@ public class AppConfig {
 
     private static String requireEnv(String name) {
         String value = System.getenv(name);
-        if (value == null || value.isBlank()) {
+        if (value == null) {
             throw new IllegalStateException("Required environment variable is missing: " + name);
         }
         return value;
@@ -27,6 +27,6 @@ public class AppConfig {
 
     private static String getEnvOrDefault(String name, String defaultValue) {
         String value = System.getenv(name);
-        return value == null || value.isBlank() ? defaultValue : value;
+        return value == null ? defaultValue : value;
     }
 }
